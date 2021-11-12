@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Rick And Morthy Personagens </title>
+</head>
+<body>
+    <!-- cabeçalho com a imagem -->
+    <header>
+        <img src="https://www.freepnglogos.com/uploads/rick-and-morty-png/rick-and-morty-portal-shoes-white-clothing-zavvi-23.png" alt="logo" class="Logo"/>
+    </header>
+    <main class="container">
+    <!-- form de busca -->
+        <form onsubmit="searchCharacters(event)">
+            <input type="text" name="bucar" placeholder="Digite o nome do personagem" />
+            <button type="submit">Buscar</button>
+        </form onsubmit='searchCharacters()'>
+        <!-- minha lista de personagem -->
+        <section class="list" id="list">
+            <!-- card personagens -->
+        </section> 
+            <div class="buttons">
+                <button id="prev" onclick="prevPage()">Prev</button>
+                <button id="next" onclick="nextPage()">Next</button>
+            </div>
+        
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
